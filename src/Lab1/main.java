@@ -8,7 +8,7 @@ public class main {
 		Scanner scan = new Scanner(System.in);
 		int cmd, a;
 		int[] arr = new int[10];
-		LinearList array = new LinearList();
+		ArrayLinearList array = new ArrayLinearList();
 		
 		
 		try {
@@ -74,5 +74,4 @@ public class main {
 		      }
 
 	}
-	//
 }
