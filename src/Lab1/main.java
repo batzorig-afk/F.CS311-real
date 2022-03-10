@@ -70,7 +70,6 @@ public class main {
 		    	   cmd=scan.nextInt();
 		      }
 		}
-		     //hh
 		      catch(Exception e) {
 		    	  System.out.println("Buruu baina!");
 		      }
