@@ -69,9 +69,8 @@ public class main {
 		    	  System.out.print("\nComand :");
 		    	   cmd=scan.nextInt();
 		      }
-		      }
-		     
-		      
+		}
+		     //hh
 		      catch(Exception e) {
 		    	  System.out.println("Buruu baina!");
 		      }
