@@ -6,8 +6,10 @@ public class main {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		int cmd, a;
-		int[] arr = new int[10];
+		int cmd, j;
+		String a;
+		
+		String[] arr = new String[10];
 		ArrayLinearList array = new ArrayLinearList();
 		
 		
@@ -35,7 +37,7 @@ public class main {
 		    		  break;
 		    	   case 3:	  
 		    		   System.out.print("Nemeh utga :");
-			    	   a=scan.nextInt();
+			    	   a=scan.next();
 			    	   array.add(arr, a);
 			    	   System.out.println("Oruulsan utga amjilttai nemegdlee.");
 			    	   break;
@@ -49,16 +51,15 @@ public class main {
 		    		   array.remove(arr, i);
 		    		   break;
 		    	   case 6:
-		    		   int j;
+		    		   int k;
 		    		   System.out.println("Indexiin utgaa oruulna uu : ");
-		    		   j = scan.nextInt();
-		    		   System.out.println("Oruulsan indexd tohiroh element : " + array.getElement(arr, j));
+		    		   k = scan.nextInt();
+		    		   System.out.println("Oruulsan indexd tohiroh element : " + array.getElement(arr, k));
 		    		   break;
 		    	   case 7:
-		    		   int k;
 		    		   System.out.println("Elementiin utgaa oruulna uu : ");
-		    		   k = scan.nextInt();
-		    		   System.out.println("Oruulsan elementiin index ni : " + array.getIndex(arr, k));
+		    		   a = scan.next();
+		    		   System.out.println("Oruulsan elementiin index ni : " + array.getIndex(arr, a));
 		    		   break;
 		    	   
 		    		default:
@@ -69,6 +70,8 @@ public class main {
 		    	   cmd=scan.nextInt();
 		      }
 		      }
+		     
+		      
 		      catch(Exception e) {
 		    	  System.out.println("Buruu baina!");
 		      }
