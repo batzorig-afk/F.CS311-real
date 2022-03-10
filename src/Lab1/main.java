@@ -1,5 +1,6 @@
 package Lab1;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class main {
@@ -8,11 +9,10 @@ public class main {
 		Scanner scan = new Scanner(System.in);
 		int cmd, j;
 		String a;
-		
-		String[] arr = new String[10];
+		System.out.print ("Daraalliinhaa niit hemjeeg oruulna uu:"); 
+		j = scan.nextInt (); 
+		String [] arr = new String [j];
 		ArrayLinearList array = new ArrayLinearList();
-		
-		
 		try {
 			  System.out.println("1.Hooson esehiig shalgah\n2.Jagsaaltiin urtiig oloh"
 			  		+ "\n3.Jagsaaltand utga nemeh\n4.Jagsaaltiin utguudiig hevleh"
@@ -38,7 +38,10 @@ public class main {
 		    	   case 3:	  
 		    		   System.out.print("Nemeh utga :");
 			    	   a=scan.next();
-			    	   array.add(arr, a);
+			    	   if(array.add(arr, a)) {
+			    		   String[] newArr = Arrays.copyOf(arr, arr.length + 1);
+			                arr = newArr;
+			    	   }
 			    	   System.out.println("Oruulsan utga amjilttai nemegdlee.");
 			    	   break;
 		    	   case 4:
@@ -73,6 +76,5 @@ public class main {
 		      catch(Exception e) {
 		    	  System.out.println("Buruu baina!");
 		      }
-
 	}
 }

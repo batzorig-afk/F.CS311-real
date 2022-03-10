@@ -29,10 +29,25 @@ public class ArrayLinearList <G> {
 			element = a[index];
 			return element;
 		}
-		public void add(G[] a, G c) {
-		    a[size()] = c;
-		    size=size + 1;
+		public boolean add(G[] a, G c) {
+			if(a.length == this.size()) {
+				return true;
+			}
+			else {
+			    a[size()] = c;
+			    size=size + 1;
+				return false;
+			}
 		}
+		public  G[] increaseSize(G[] arr)
+	    {
+	        Object[] newArr = new Object[arr.length +10 ];
+	        for(int i = 0; i < arr.length; i++)
+	        {
+	            newArr[i] = arr[i];
+	        }
+	        return (G[])newArr;
+	    }
 		public void print(G[] a) {
 			String s = "";
 			System.out.print("Jagsaalt : ");
