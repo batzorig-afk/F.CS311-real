@@ -21,9 +21,8 @@ public class ColoredLight extends Light{
 		// TODO
 		throw new RuntimeException("ColoredLight.getColor() not yet implemented!");
 	}
-	
 	/**
-	 * Changes the color of this light to be c.
+	 * Changes the color of this light to be 
 	 */
 	public void setColor(Color c) {
 		// TODO
