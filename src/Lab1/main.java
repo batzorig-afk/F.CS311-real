@@ -62,7 +62,12 @@ public class main {
 		    	   case 7:
 		    		   System.out.println("Elementiin utgaa oruulna uu : ");
 		    		   a = scan.next();
-		    		   System.out.println("Oruulsan elementiin index ni : " + array.getIndex(arr, a));
+		    		   if(array.getIndex(arr, a) == -1) {
+		    			   System.out.println("Oruulsan utga oldsongui");
+		    		   }
+		    		   else {
+			    		   System.out.println("Oruulsan elementiin index ni : " + array.getIndex(arr, a));
+		    		   }
 		    		   break;
 		    	   
 		    		default:

@@ -17,12 +17,13 @@ public class ArrayLinearList <G> {
 			return size;
 		}
 		public int getIndex(G[] a, G element) {
+			int b=-1;
 			for(int i=0; i < size; i++) {
-				if(a[i] == element) {
-					return i;
+				if(a[i].equals(element)) {
+					b=i;
 				}
 			}
-			return -1;
+			return b;
 		}
 		public G getElement(G[] a, int index) {
 			G element;
