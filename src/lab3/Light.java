@@ -15,7 +15,7 @@ public class Light {
 	 * Constructor creates a new light object.
 	 */
 	public Light() {
-		this(false);
+		this.isOn=false;
 	}
 	
 	/**
@@ -34,7 +34,7 @@ public class Light {
 	 * @return true if this light is on, false otherwise
 	 */
 	public boolean isOn() {
-		return false;
+		return isOn;
 	}
 	
 	/**
@@ -52,9 +52,9 @@ public class Light {
 	public void randomChange() {
 		if (Math.random() < .5) {
 			this.setOn(true);
-		} else {
+		}
+		else {
 			this.setOn(false);
 		}
 	}
-	
 }
