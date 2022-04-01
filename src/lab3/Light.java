@@ -8,14 +8,13 @@ package lab3;
 public class Light {
 	
 	// Fields
-	private static boolean isOn;
-	
+	protected static boolean isOn;
 	// Constructors
 	/**
 	 * Constructor creates a new light object.
 	 */
 	public Light() {
-		this.isOn=false;
+		isOn=false;
 	}
 	
 	/**
@@ -43,7 +42,7 @@ public class Light {
 	 *               the light on. false turns it off
 	 */
 	public void setOn(boolean isOn) {
-		isOn = isOn;
+		this.isOn = isOn;
 	}
 	
 	/**
