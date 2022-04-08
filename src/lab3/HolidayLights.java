@@ -1,7 +1,6 @@
 package lab3;
 
 import java.util.List;
-import java.util.Collections;
 
 /**
  * Represents a sequence of lights that periodically changes

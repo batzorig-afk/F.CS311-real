@@ -27,7 +27,7 @@ public class HolidayLightsWindow extends JFrame {
 	
 	private static final long serialVersionUID = -722257469624438083L;
 	private HolidayLights hl;
-	private static final int millsPerFrame = 500;
+	private static final int millsPerFrame = 50;
 	
 	public HolidayLightsWindow(HolidayLights hl) {
 		// Sets up the title bar
@@ -41,7 +41,7 @@ public class HolidayLightsWindow extends JFrame {
 		
 		JPanel contentPane = new JPanel();
 		contentPane.setLayout(new BorderLayout());
-		contentPane.setPreferredSize(new Dimension(12*55,110));
+		contentPane.setPreferredSize(new Dimension(12*55,100));
 
 		LightWindow lw = new LightWindow(hl);
 		JScrollPane jsp = new JScrollPane(lw);
@@ -109,8 +109,13 @@ public class HolidayLightsWindow extends JFrame {
 				g2d.drawArc(curX+13, curY-15, 50, 25, 0, 180);
 				g2d.setStroke(oldStroke);
 				}
-				
 				curX += 50;
+//				if(curX>=130) {
+//					curY +=50;
+//				}
+//				else {
+//					curY -=50;
+//				}
 			}
 			
 		}
