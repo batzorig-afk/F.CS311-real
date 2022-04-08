@@ -34,11 +34,11 @@ public class LightTest {
 	@Test public void turnOnOnlyOneLight() {
 		Light firstLight = new Light();
 		Light secondLight = new Light();
+
+		Assert.assertFalse(secondLight.isOn());
 		
 		firstLight.setOn(true);
-		
 		Assert.assertTrue(firstLight.isOn());
-		Assert.assertTrue(secondLight.isOn());
 	}
 	
 	@Test public void testRandomChange() {

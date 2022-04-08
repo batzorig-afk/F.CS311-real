@@ -8,7 +8,7 @@ package lab3;
 public class Light {
 	
 	// Fields
-	protected static boolean isOn;
+	protected boolean isOn;
 	// Constructors
 	/**
 	 * Constructor creates a new light object.

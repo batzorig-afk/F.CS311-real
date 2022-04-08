@@ -4,13 +4,16 @@ import java.awt.Color;
 
 public class ColoredLight extends Light{
 	
+	Color color;
 	/**
 	 * Creates a new colored light.
 	 * @param color - color of this light.
 	 */
 	public ColoredLight(Color color) {
 		// TODO
-		throw new RuntimeException("ColoredLight(Color) not yet implemented!");
+		super(true);
+		this.color = color;
+		//throw new RuntimeException("ColoredLight(Color) not yet implemented!");
 	}
 	
 	/**
@@ -18,16 +21,16 @@ public class ColoredLight extends Light{
 	 * @return color of this light.
 	 */
 	public Color getColor() {
-		// TODO
-		throw new RuntimeException("ColoredLight.getColor() not yet implemented!");
+		return color;
+		//throw new RuntimeException("ColoredLight.getColor() not yet implemented!");
 	}
 	
 	/**
 	 * Changes the color of this light to be c.
 	 */
 	public void setColor(Color c) {
-		// TODO
-		throw new RuntimeException("ColoredLight.setColor() not yet implemented!");
+		color = c;
+		//throw new RuntimeException("ColoredLight.setColor() not yet implemented!");
 	}
 	
 	/**
@@ -35,9 +38,24 @@ public class ColoredLight extends Light{
 	 */
 	@Override
 	public void randomChange() {
-		// TODO. 
-		// Take advantage of Light.randomChange
-		throw new RuntimeException("ColoredLight.randomChange() not yet implemented!");
+		double a;
+		a = Math.random();
+		if(a<0.2) {
+			color = Color.red;
+		}
+		else if(a>=0.2&&a<0.4) {
+			color = Color.green;
+		}
+		else if(a>=0.4&&a<0.6) {
+			color = Color.blue;
+		}
+		else if(a>=0.6&&a<0.8) {
+			color = Color.yellow;
+		}
+		else if(a>=0.8&&a<1) {
+			color = Color.pink;
+		}
+		//throw new RuntimeException("ColoredLight.randomChange() not yet implemented!");
 	}
 	
 }
