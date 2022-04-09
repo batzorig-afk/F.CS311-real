@@ -1,14 +1,18 @@
 package lab3;
 
 import java.awt.Color;
+import java.util.Random;
 
 public class ColoredLight extends Light{
 	
 	Color color;
+	Random r = new Random();
 	/**
 	 * Creates a new colored light.
 	 * @param color - color of this light.
-	 */
+	 */public ColoredLight(){
+		 super();
+	 }
 	public ColoredLight(Color color) {
 		// TODO
 		super(true);
@@ -38,23 +42,7 @@ public class ColoredLight extends Light{
 	 */
 	@Override
 	public void randomChange() {
-		double a;
-		a = Math.random();
-		if(a<0.2) {
-			color = Color.red;
-		}
-		else if(a>=0.2&&a<0.4) {
-			color = Color.green;
-		}
-		else if(a>=0.4&&a<0.6) {
-			color = Color.blue;
-		}
-		else if(a>=0.6&&a<0.8) {
-			color = Color.yellow;
-		}
-		else if(a>=0.8&&a<1) {
-			color = Color.pink;
-		}
+		color = new Color(r.nextFloat(), r.nextFloat(), r.nextFloat());
 		//throw new RuntimeException("ColoredLight.randomChange() not yet implemented!");
 	}
 	

@@ -110,12 +110,12 @@ public class HolidayLightsWindow extends JFrame {
 				g2d.setStroke(oldStroke);
 				}
 				curX += 50;
-//				if(curX>=130) {
+//			    if(curX>=130) {
 //					curY +=50;
 //				}
 //				else {
-//					curY -=50;
-//				}
+//						curY -=50;
+//				   }
 			}
 			
 		}
