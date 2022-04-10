@@ -21,7 +21,11 @@ public class RunningHolidayLights implements HolidayLights {
 	public List<Light> next() {
 		List<Light> light_list = new ArrayList<Light>();
 		for(int i=0; i<size; i++) {
-			my_light = new ColoredLight(Color.yellow);
+			ColoredLight col = new ColoredLight();
+			double h = col.e;
+			double s = col.r;
+			double f = col.w;
+			my_light = new ColoredLight(Color.getHSBColor((float)h, (float)s, (float)f));
 			my_light.randomChange();
 			light_list.add(my_light);
 			

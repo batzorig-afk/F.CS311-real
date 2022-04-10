@@ -71,7 +71,7 @@ public class main {
 		    		   break;
 		    	   
 		    		default:
-		    		   System.out.println("1-4 iin hoorond comand oruulna uu!");
+		    		   System.out.println("1-7 iin hoorond comand oruulna uu!");
 		    		
 		    	  }
 		    	  System.out.print("\nComand :");

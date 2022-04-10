@@ -5,10 +5,14 @@ import java.awt.Color;
 public class ColoredLight extends Light{
 	
 	Color color;
+	double e, r, w;
 	/**
 	 * Creates a new colored light.
 	 * @param color - color of this light.
 	 */
+	public ColoredLight() {
+		super();
+	}
 	public ColoredLight(Color color) {
 		// TODO
 		super(true);
@@ -38,22 +42,41 @@ public class ColoredLight extends Light{
 	 */
 	@Override
 	public void randomChange() {
-		double a;
+		double a, b, c, d;
 		a = Math.random();
+
 		if(a<0.2) {
-			color = Color.red;
+			b = Math.random();
+			c = Math.random();
+			d = Math.random();
+			e = b;
+			r = c;
+			w = d;
+			color = Color.getHSBColor((float)b, (float)c, (float)d);
 		}
 		else if(a>=0.2&&a<0.4) {
-			color = Color.green;
+			b = Math.random();
+			c = Math.random();
+			d = Math.random();
+			color = Color.getHSBColor((float)b, (float)c, (float)d);
 		}
 		else if(a>=0.4&&a<0.6) {
-			color = Color.blue;
+			b = Math.random();
+			c = Math.random();
+			d = Math.random();
+			color = Color.getHSBColor((float)b, (float)c, (float)d);
 		}
 		else if(a>=0.6&&a<0.8) {
-			color = Color.yellow;
+			b = Math.random();
+			c = Math.random();
+			d = Math.random();
+			color = Color.getHSBColor((float)b, (float)c, (float)d);
 		}
 		else if(a>=0.8&&a<1) {
-			color = Color.pink;
+			b = Math.random();
+			c = Math.random();
+			d = Math.random();
+			color = Color.getHSBColor((float)b, (float)c, (float)d);
 		}
 		//throw new RuntimeException("ColoredLight.randomChange() not yet implemented!");
 	}
