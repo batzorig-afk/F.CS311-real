@@ -21,7 +21,8 @@ public class MyHolidayLights implements HolidayLights {
 	public List<Light> next() {
 		List<Light> light_list = new ArrayList<Light>();
 		for(int i=0; i<size; i++) {
-			my_light = new ColoredLight();
+			my_light = new ColoredLight(Color.yellow);
+			//my_light = new ColoredLight();
 			my_light.randomChange();
 			light_list.add(my_light);
 		}
