@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>javax</name>
+			<type>2</type>
+			<location>C:/Users/Ben/Downloads/jsonp_1.1_api/main/java/javax</location>
+		</link>
+	</linkedResources>
 </projectDescription>

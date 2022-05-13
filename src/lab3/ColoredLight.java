@@ -6,24 +6,16 @@ import java.util.Random;
 public class ColoredLight extends Light{
 	
 	Color color;
-<<<<<<< HEAD
 	double e, r, w;
-=======
-	Random r = new Random();
->>>>>>> branch 'master' of https://github.com/batzorig-afk/F.CS311-real.git
-	/**
-	 * Creates a new colored light.
-	 * @param color - color of this light.
-<<<<<<< HEAD
-	 */
+	Random k = new Random();
+
 	public ColoredLight() {
 		super();
 	}
-=======
-	 */public ColoredLight(){
+	public ColoredLight(){
 		 super();
 	 }
->>>>>>> branch 'master' of https://github.com/batzorig-afk/F.CS311-real.git
+	
 	public ColoredLight(Color color) {
 		// TODO
 		super(true);
@@ -53,7 +45,7 @@ public class ColoredLight extends Light{
 	 */
 	@Override
 	public void randomChange() {
-<<<<<<< HEAD
+
 		double a, b, c, d;
 		a = Math.random();
 
@@ -90,10 +82,7 @@ public class ColoredLight extends Light{
 			d = Math.random();
 			color = Color.getHSBColor((float)b, (float)c, (float)d);
 		}
-=======
-		color = new Color(r.nextFloat(), r.nextFloat(), r.nextFloat());
->>>>>>> branch 'master' of https://github.com/batzorig-afk/F.CS311-real.git
-		//throw new RuntimeException("ColoredLight.randomChange() not yet implemented!");
+		color = new Color(k.nextFloat(), k.nextFloat(), k.nextFloat());
 	}
 	
 }

@@ -9,12 +9,7 @@ public class Main {
 		System.out.print("Gerelnii urtiig oruul:");
 		int l = scan.nextInt();
 		// Create HolidayLights
-<<<<<<< HEAD
 		HolidayLights hl = new MyHolidayLights(12);
-=======
-		HolidayLights hl = new MyHolidayLights(l);
->>>>>>> branch 'master' of https://github.com/batzorig-afk/F.CS311-real.git
-		
 		// Create and show HolidayLightsWindow
 		HolidayLightsWindow frame = new HolidayLightsWindow(hl);
 		frame.pack();
